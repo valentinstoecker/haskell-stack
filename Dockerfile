@@ -3,3 +3,4 @@ RUN apt-get update -y && apt-get install -y git wget cabal-install build-essenti
 RUN cabal update
 
 RUN cabal install -j --constraint "aeson == 1.5.6.0" stack
+RUN stack upgrade
